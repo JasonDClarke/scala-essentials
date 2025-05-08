@@ -28,5 +28,46 @@ class Person(name: String, val age: Int) {
   def this() = this("John doe")
 }
 
+/*
+  Novel and a Writer
+
+  Writer: first name, surname, year
+    - method fullname
+
+  Novel: name, year of release, author
+  - authorAge
+  - isWrittenBy(author)
+  - copy (new year of release) new instance of Novel
+*/
+
+class Writer(firstName: String, surname: String, val year: Int) {
+  def fullname() = s"$firstName $surname"
+}
+
+class Novel(name: String, yearOfRelease: Int, author: Writer) {
+  def authorAge(): Int = {
+    yearOfRelease - author.year
+  }
+
+  def isWrittenBy(author: Writer): Boolean = {
+    author == this.author
+  }
+
+  def copy(newYearOfRelease: Int): Novel = {
+    new Novel(name, newYearOfRelease, author)
+  }
+}
+
+
+/*
+  Counter class
+    - receives an int value
+    - method current count
+    - method to increment/decrement => new Counter
+    - overload inc/dec to receive an amount
+
+*/
+
+
 
 // class parameters are NOT Fields
