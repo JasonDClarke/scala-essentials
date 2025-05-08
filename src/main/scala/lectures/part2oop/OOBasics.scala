@@ -5,6 +5,13 @@ object OOBasics extends App {
   println(person.age)
   person.greet("Daniel")
 
+  val author = new Writer("Charles", "Dickens", 1812)
+  val imposter = new Writer("Charles", "Dickens", 1812)
+  val novel = new Novel("Great Expectations", 1861, author)
+
+  println(novel.authorAge())
+  println(novel.isWrittenBy(author)) // true
+  println(novel.isWrittenBy(imposter)) // false
 
 }
 
@@ -65,7 +72,6 @@ class Novel(name: String, yearOfRelease: Int, author: Writer) {
     - method current count
     - method to increment/decrement => new Counter
     - overload inc/dec to receive an amount
-
 */
 
 
