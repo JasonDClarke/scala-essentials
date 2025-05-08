@@ -49,6 +49,22 @@ object Expressions extends App {
 
 //  val anotherValue = z + 1 z only defined in scope of code block, causes exception
 
+// 1. difference between "hello world" vs println("hello world")
+  // value of type string vs side effect returning Unit that has side effect of printing to console
+
+  // 2.
+
+  val someValue = {
+    2 < 3
+  }
+  // returns true
+
+  val someOtherValue = {
+    if (someValue) 239 else 986
+    42
+  }
+  // returns 42
+
 
 
 
