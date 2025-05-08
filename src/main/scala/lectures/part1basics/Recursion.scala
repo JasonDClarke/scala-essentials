@@ -61,15 +61,14 @@ object Recursion extends App {
     @tailrec
     def concatStringHelper
     (
-      string: String,
       number: Int,
       accumulator: String // intermediate value
     ): String = {
       if (number <= 0) accumulator
-      else concatStringHelper(string, number -1, accumulator + string)
+      else concatStringHelper(number -1, accumulator + string)
     }
 
-    concatStringHelper(string, number, "")
+    concatStringHelper(number, "")
   }
 
   println(concatenateTailrec("dog", 4))
