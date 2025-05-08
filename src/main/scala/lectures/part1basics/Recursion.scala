@@ -54,7 +54,7 @@ object Recursion extends App {
   /*
     1. Concatenate a string n times
     2. IsPrime function tail recursive
-    3. Fibonacci function, tail recurcive
+    3. Fibonacci function, tail recursive
    */
 
   def concatenateTailrec(string: String, number: Int): String = {
