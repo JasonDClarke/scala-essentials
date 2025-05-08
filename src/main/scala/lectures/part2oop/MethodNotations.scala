@@ -10,7 +10,7 @@ object MethodNotations extends App {
     def unary_+ : Person = new Person(name, favouriteMovie, age + 1)
     def isAlive: Boolean = true
     def apply (): String = s"Hi, my anme is $name and I like $favouriteMovie"
-    def apply (n:Int): String = s"$name watched favourite movie $n times"
+    def apply (n:Int): String = s"$name watched $favouriteMovie $n times"
 
     def +(nickname: String): Person = new Person(s"$name $nickname", favouriteMovie)
 
