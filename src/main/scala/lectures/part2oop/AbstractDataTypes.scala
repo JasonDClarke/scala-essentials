@@ -40,4 +40,9 @@ object AbstractDataTypes extends App {
   // 2 - multiple traits may be inherited by the same class
   // 3 - traits = behaviour, DOING, abstract class = thing
 
+  // type hierarchy
+  // scala.Any -> scala.AnyRef (java.lang.Object)
+  // scala.Any -> scala.AnyVal (Int, Unit, Boolean, Float, ...)  - rarely need to extend this because its primitive types
+  // scala.Null can replace any scala.AnyRef (ie null extends anything in AnyRef
+  // scala.Nothing is a subtype of EVERY instance in scala (AnyRef and AnyVal)
 }
