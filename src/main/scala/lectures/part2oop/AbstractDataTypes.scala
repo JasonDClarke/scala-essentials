@@ -33,4 +33,11 @@ object AbstractDataTypes extends App {
   val croc = new Crocodile
   croc.eat(dog)
 
+  // traits vs abstract classes
+  // both traits and abstract classes and have abstract and non-abstract members
+  // they are pretty similar BUT
+  // 1 - traits do NOT have constructor parameters
+  // 2 - multiple traits may be inherited by the same class
+  // 3 - traits = behaviour, DOING, abstract class = thing
+
 }
